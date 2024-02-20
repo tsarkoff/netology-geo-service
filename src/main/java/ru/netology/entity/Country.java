@@ -4,6 +4,6 @@ public enum Country {
     LOCALHOST,
     RUSSIA,
     //GERMANY,
-    USA;
+    USA
     //BRAZIL;
 }
