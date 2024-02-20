@@ -17,19 +17,13 @@ public class Location {
         this.building = building;
     }
 
-    public String getCity() {
-        return city;
-    }
+    // public String getCity() { return city; }
 
     public Country getCountry() {
         return country;
     }
 
-    public String getStreet() {
-        return street;
-    }
+    // public String getStreet() { return street; }
 
-    public int getBuilding() {
-        return building;
-    }
+    // public int getBuilding() { return building; }
 }

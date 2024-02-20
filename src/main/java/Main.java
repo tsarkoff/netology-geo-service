@@ -1,12 +1,11 @@
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
+
 import ru.netology.geo.GeoService;
 import ru.netology.geo.GeoServiceMock;
 import ru.netology.i18n.LocalizationService;
 import ru.netology.i18n.LocalizationServiceMock;
 import ru.netology.sender.MessageSender;
-import ru.netology.sender.MessageSenderMock;
 import ru.netology.sender.MessageSenderMock;
 
 public class Main {
