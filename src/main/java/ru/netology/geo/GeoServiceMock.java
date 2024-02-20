@@ -3,7 +3,7 @@ package ru.netology.geo;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 
-public class GeoServiceImpl implements GeoService {
+public class GeoServiceMock implements GeoService {
 
     public static final String LOCALHOST = "127.0.0.1";
     public static final String MOSCOW_IP = "172.0.32.11";
@@ -14,7 +14,7 @@ public class GeoServiceImpl implements GeoService {
      */
     public Location byIp(String ip) {
         if (LOCALHOST.equals(ip)) {
-            return new Location(null, null, null, 0);
+            return new Location(null, Country.LOCALHOST, null, 0);
         } else if (MOSCOW_IP.equals(ip)) {
             return new Location("Moscow", Country.RUSSIA, "Lenina", 15);
         } else if (NEW_YORK_IP.equals(ip)) {
