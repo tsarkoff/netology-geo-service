@@ -2,22 +2,17 @@ package ru.netology.sender;
 
 import java.util.Map;
 
+import lombok.AllArgsConstructor;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 import ru.netology.geo.GeoService;
 import ru.netology.i18n.LocalizationService;
 
+@AllArgsConstructor
 public class MessageSenderMock implements MessageSender {
-
     public static final String IP_ADDRESS_HEADER = "x-real-ip";
     private final GeoService geoService;
-
     private final LocalizationService localizationService;
-
-    public MessageSenderMock(GeoService geoService, LocalizationService localizationService) {
-        this.geoService = geoService;
-        this.localizationService = localizationService;
-    }
 
     public String send(Map<String, String> headers) {
         String ipAddress = String.valueOf(headers.get(IP_ADDRESS_HEADER));
