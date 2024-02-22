@@ -12,6 +12,9 @@ public class Main {
 
     //Тестовый пример
     public static void main(String[] args) {
+        if (args == null)  {
+            throw new IllegalArgumentException();
+        }
         GeoService geoService = new GeoServiceMock();
         LocalizationService localizationService = new LocalizationServiceMock();
         MessageSender messageSender = new MessageSenderMock(geoService, localizationService);

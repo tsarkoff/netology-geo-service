@@ -1,12 +1,12 @@
 package ru.netology.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
+@EqualsAndHashCode
+@ToString
 public class Location {
     private final String city;
     private final Country country;
